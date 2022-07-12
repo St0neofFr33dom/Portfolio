@@ -1,0 +1,22 @@
+.card{
+    width: 15vw;
+    height:20vh;
+    margin: auto;
+    border-width: 2px;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.title{
+    width:100%;
+    margin-top: 0.2em;
+    border-bottom-width: 0.1em;
+    border-bottom-style: solid;
+}
+
+.description{
+    text-align: center;
+    
+}
