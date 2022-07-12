@@ -3,7 +3,7 @@
     z-index: 1;
     background: none;
     position: absolute;
-    color: #A31621;
+    color: var(--highlight-colour);
 }
 
 .card{
@@ -16,7 +16,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    background-color: #247BA0;
+    background-color: var(--secondary-colour);
 }
 
 .background:hover{

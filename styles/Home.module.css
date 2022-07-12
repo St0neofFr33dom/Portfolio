@@ -11,8 +11,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #172121;
-  color: #e2e2e2
+  background-color: var(--background-colour);
+  color: var(--text-colour)
 }
 
 .footer {
@@ -74,6 +74,6 @@
   margin-top: 3em;
   width: 70vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
