@@ -1,5 +1,6 @@
 .container {
   padding: 0 2rem;
+  
 }
 
 .main {
@@ -10,6 +11,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #172121;
+  color: #e2e2e2
 }
 
 .footer {
@@ -54,6 +57,7 @@
 }
 
 .rowcard{
+  text-align: center;
   margin-top: 1em;
   display:flex;
   justify-content: space-evenly;
@@ -68,6 +72,8 @@
 
 .routes{
   margin-top: 3em;
+  width: 70vw;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 }

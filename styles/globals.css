@@ -1,3 +1,11 @@
+:root{
+  --background-colour: #172121,
+  --highlight-colour: #A31621,
+  --priomary-colour: #011936,
+  --secondary-colour: #247BA0,
+  --text-colour: #E2E2E2,
+}
+
 html,
 body {
   padding: 0;

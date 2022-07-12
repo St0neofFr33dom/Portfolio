@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import IntroCard from '../components/IntroCard'
 import RouteCard from '../components/RouteCard'
 import WhoIAmImage from '../public/MugShot.png'
 import WhatIDidImage from '../public/BoardGame.jpg'
-
+import Placeholder from '../public/nic-cage-eyes.jpg'
 
 export default function Home() {
 
@@ -16,8 +17,18 @@ export default function Home() {
     alt: "A flattering photo of the creator of the Portfolio"
   }
   const whatIDid = {
-    title: "What I Did",
+    title: "What I Have Done",
     image: WhatIDidImage,
+    alt: "Birds-Eye view of a board game set out on a table"
+  }
+  const whatICan = {
+    title: "What I Can Do",
+    image: Placeholder,
+    alt: "Birds-Eye view of a board game set out on a table"
+  }
+  const whatIWant = {
+    title: "What I Am Learning",
+    image: Placeholder,
     alt: "Birds-Eye view of a board game set out on a table"
   }
   return (
@@ -42,8 +53,14 @@ export default function Home() {
         </section>
 
         <section className={styles.routes}>
-          <RouteCard title={whoIAm.title} image={whoIAm.image} alt={whoIAm.alt}/>
+        <Link href="/about">
+          <a>
+            <RouteCard title={whoIAm.title} image={whoIAm.image} alt={whoIAm.alt}/>
+          </a>
+        </Link>
           <RouteCard title={whatIDid.title} image={whatIDid.image} alt={whatIDid.alt}/>
+          <RouteCard title={whatICan.title} image={whatICan.image} alt={whatICan.alt}/>
+          <RouteCard title={whatIWant.title} image={whatIWant.image} alt={whatIWant.alt}/>
         </section>
 
       </main>

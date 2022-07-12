@@ -3,18 +3,20 @@
     z-index: 1;
     background: none;
     position: absolute;
-    color: antiquewhite;
+    color: #A31621;
 }
 
 .card{
-    margin: 0 2em 0 2em;
+    margin: 2em;
     position: relative;
     width: 20vw;
     height: 20vw;
+    min-height: 200px;
+    min-width: 200px;
     display:flex;
     justify-content: center;
     align-items: center;
-    background-color: dodgerblue;
+    background-color: #247BA0;
 }
 
 .background:hover{
