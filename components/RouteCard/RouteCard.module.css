@@ -1,0 +1,22 @@
+
+.title{
+    z-index: 1;
+    background: none;
+    position: absolute;
+    color: antiquewhite;
+}
+
+.card{
+    margin: 0 2em 0 2em;
+    position: relative;
+    width: 20vw;
+    height: 20vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: dodgerblue;
+}
+
+.background:hover{
+    opacity: 50%;
+}

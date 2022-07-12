@@ -1,11 +1,20 @@
-import React from 'react'
+import React from "react";
+import styles from "./RouteCard.module.css";
+import Image from "next/image";
 
-const RouteCard = ({title,image}) => {
-    return (
-        <div style={{backgroundImage: image}}>
-            <h2>{title}</h2>
-        </div>
-    )
-}
+const RouteCard = ({ title, image, alt }) => {
+  return (
+    <div className={styles.card}>
+      <Image
+        className={styles.background}
+        src={image}
+        alt={alt}
+        layout='fill'
+        objectFit="cover"
+      />
+      <h2 className={styles.title}>{title}</h2>
+    </div>
+  );
+};
 
-export default RouteCard
+export default RouteCard;

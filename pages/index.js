@@ -1,10 +1,25 @@
+import { useState } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import IntroCard from '../components/IntroCard'
 import RouteCard from '../components/RouteCard'
+import WhoIAmImage from '../public/MugShot.png'
+import WhatIDidImage from '../public/BoardGame.jpg'
+
 
 export default function Home() {
+
+  const whoIAm = {
+    title: "Who I Am",
+    image: WhoIAmImage,
+    alt: "A flattering photo of the creator of the Portfolio"
+  }
+  const whatIDid = {
+    title: "What I Did",
+    image: WhatIDidImage,
+    alt: "Birds-Eye view of a board game set out on a table"
+  }
   return (
     <div className={styles.container}>
       <Head>
@@ -17,17 +32,18 @@ export default function Home() {
         <section className={styles.opener}>
           <h2>Thank you for visiting! My name is:</h2>
           <h1 className={styles.title}>
-            Christophe Charbnneau-Freeston 
+            Christophe Charbonneau-Freeston 
           </h1>
           <section className={styles.rowcard}>
-          <IntroCard title="What I've Been" description="Chemical Engineering Graduate"/>
+          <IntroCard title="What I Was" description="Chemical Engineering Graduate"/>
           <IntroCard title="What I Am" description="Junior Full-Stack Web Devloper"/>
           <IntroCard title="What I Will Be" description="???"/>
           </section>
         </section>
 
         <section className={styles.routes}>
-          <RouteCard />
+          <RouteCard title={whoIAm.title} image={whoIAm.image} alt={whoIAm.alt}/>
+          <RouteCard title={whatIDid.title} image={whatIDid.image} alt={whatIDid.alt}/>
         </section>
 
       </main>
