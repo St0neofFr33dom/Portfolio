@@ -1,25 +1,32 @@
 .card{
     width: 15vw;
-    height:20vh;
+    height:25vh;
     margin: auto;
+    padding: 0.1em;
     border-width: 2px;
     border-style: solid;
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: var(--primary-colour);
+    background-color: var(--secondary-colour);
 }
 
 .title{
     width:100%;
-    margin-top: 0.2em;
+    margin-top: 0em;
     border-bottom-width: 0.1em;
     border-bottom-style: solid;
-    background-color: var(--secondary-colour);
+    background-color: var(--primary-colour);
 }
 
 .body{
+    margin-top: 0.1em;
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
+}
+
+.icon{
+    height: 40%;
+    width: auto
 }
