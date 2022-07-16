@@ -4,21 +4,35 @@
     background: none;
     position: absolute;
     color: var(--highlight-colour);
+    font-size:inherit;
 }
 
 .card{
-    margin: 2em;
+    margin: 5vw;
     position: relative;
     width: 20vw;
     height: 20vw;
+    padding: 5vw;
     min-height: 200px;
     min-width: 200px;
     display:flex;
     justify-content: center;
     align-items: center;
     background-color: var(--secondary-colour);
+    font-size: larger;
+    transition: 0.2s;
 }
 
-.background:hover{
-    opacity: 20%;
+.card:hover{
+    margin: 0vw 2.5vw;
+    width: 25vw;
+    height: 25vw;
+    box-shadow: 0em 0em 1em 1em var(--highlight-colour);
+    font-size: x-large;
 }
+
+
+.background:hover{
+    opacity: 70%;
+}
+
