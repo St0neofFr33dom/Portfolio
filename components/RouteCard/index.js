@@ -9,10 +9,12 @@ const RouteCard = ({ title, image, alt }) => {
         className={styles.background}
         src={image}
         alt={alt}
-        layout='fill'
+        layout="fill"
         objectFit="cover"
       />
-      <h2 className={styles.title}>{title}</h2>
+      <div className={styles.titleContainer}>
+        <h2 className={styles.title}>{title}</h2>
+      </div>
     </div>
   );
 };
