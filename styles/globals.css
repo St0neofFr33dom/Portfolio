@@ -1,8 +1,8 @@
 :root{
   --background-colour: #172121;
   --highlight-colour: #A31621;
-  --primary-colour: #011936;
-  --secondary-colour: #247BA0;
+  --primary-colour: #16A398;
+  --secondary-colour: #5216A3;
   --text-colour: #E2E2E2;
 }
 
@@ -14,7 +14,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-main {
+body,main {
   background-color: var(--background-colour);
   color: var(--text-colour)
 }
