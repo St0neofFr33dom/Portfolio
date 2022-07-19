@@ -13,8 +13,8 @@
     width: 20vw;
     height: 20vw;
     padding: 5vw;
-    min-height: 200px;
-    min-width: 200px;
+    min-height: 300px;
+    min-width: 300px;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -36,3 +36,8 @@
     opacity: 70%;
 }
 
+@media (max-width: 800px){
+    .card{
+        width: 50vw;
+    }
+}
