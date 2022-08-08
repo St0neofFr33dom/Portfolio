@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    background-color: steelblue;
+    width: 50vw;
+    height: 10vh;
+}
+
+.text{
+    background-color: chartreuse;
+    width: 85%;
+}
+
+
+.box{
+    background-color: red;
+    width: 20%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+}
