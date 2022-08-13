@@ -4,11 +4,13 @@ import Link from "next/link";
 
 const NavBar = ({ text, src }) => {
   return (
-    <div className={styles.container}>
-      <div className={styles.text}>
-        <h2>{text}</h2>
+    <div className="navbar">
+      <div className="navbar-textbox">
+        <h2 >{text}</h2>
       </div>
-      <div className={styles.box}></div>
+      <div className="navbar-circlebox">
+        <div className="navbar-circle" />
+      </div>
     </div>
   );
 };

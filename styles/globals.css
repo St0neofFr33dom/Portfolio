@@ -10,19 +10,77 @@ html,
 body {
   padding: 0;
   margin: 0;
+  background-color: silver;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-body,main {
+main {
   background-color: var(--background-colour);
-  color: var(--text-colour)
+  color: var(--text-colour);
+  display:flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
 }
-a {
-  color: inherit;
-  text-decoration: none;
+h1 {
+  color: var(--text-colour);
+  text-align: center;
 }
 
 * {
   box-sizing: border-box;
+}
+
+.navbar{
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  margin: 0.5em 0;
+}
+
+.navbar-textbox{
+  width: 80%;
+  background-color: steelblue;
+}
+
+
+.navbar-circlebox{
+  width: 10vh;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  background-color: steelblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-circlebox > div {
+  height : 90%;
+  width : 90%;
+  background-color: #A31621;
+  border-radius: 50%;
+}
+
+.hero{
+  display:flex;
+}
+
+.navbar-container{
+  width:50%;
+}
+
+.screen-container{
+  width:50%;
+  background-color: aliceblue;
+}
+
+@media screen and (min-width:1080px) {
+  main {
+    width: 1080px;
+    margin:auto;
+    box-shadow: 5px 4px 18px 2px rgba(0,0,0,0.45);
+-webkit-box-shadow: 5px 4px 18px 2px rgba(0,0,0,0.45);
+-moz-box-shadow: 5px 4px 18px 2px rgba(0,0,0,0.45);
+  }
 }
