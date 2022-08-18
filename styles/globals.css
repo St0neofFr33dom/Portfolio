@@ -32,6 +32,8 @@ h1 {
   box-sizing: border-box;
 }
 
+
+/* || NavBar Component || */
 .navbar{
   display: flex;
   width: 100%;
@@ -62,6 +64,40 @@ h1 {
   border-radius: 50%;
 }
 
+/* || Start Screen Content || */
+
+.start-screen{
+  display: flex;
+  flex-direction: column;
+}
+
+.start-screen > h2{
+  text-align: center;
+  margin-bottom: -1em;
+}
+
+.start-screen-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.start-screen-text{
+  width: 70%;
+}
+
+.start-screen-text > h3{
+  text-decoration: underline;
+}
+
+.start-screen-text > h4{
+  margin-top: -0.5em;
+}
+
+.start-screen-image{
+  width: 30%;
+  margin: 2em 1em
+}
+/* || Main Page Containers || */
 .hero{
   display:flex;
 }
@@ -72,7 +108,25 @@ h1 {
 
 .screen-container{
   width:50%;
-  background-color: aliceblue;
+  background-color: rgb(8, 61, 8);
+}
+
+
+/* || Media Queries || */
+@media screen and (max-width:720px) {
+  main {
+    max-width: 480px;
+    margin:auto;
+  }
+  .hero{
+    flex-direction: column;
+  }
+  .navbar-container{
+    width:99%;
+  }
+  .screen-container{
+    width: 99%;
+  }
 }
 
 @media screen and (min-width:1080px) {
