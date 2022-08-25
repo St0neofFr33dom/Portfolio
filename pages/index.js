@@ -8,14 +8,21 @@ const Home = () => {
 
   const [screen, setScreen] = useState("Start")
 
+
+  function changeScreen(e){
+     setScreen(e.target.dataset.value)
+
+  }
+
   return (
     <main>
       <h1>Christophe Charbonneau-Freeston</h1>
+      <h2>{screen}</h2>
       <div className="hero">
         <div className="navbar-container">
-          <NavBar src="/about" text="About Me" />
-          <NavBar src="/portfolio" text="Projects" />
-          <NavBar src="/skills" text="Skills" />
+          <NavBar text="About Me"  value="About" onClick={changeScreen}/>
+          <NavBar text="Projects" value="Projects" onClick={changeScreen}/>
+          <NavBar text="Skills" value="Skills" onClick={changeScreen}/>
         </div>
         <div className="screen-container">
           {(screen === "Start") && <StartScreen />}

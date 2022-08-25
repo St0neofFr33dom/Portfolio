@@ -2,14 +2,14 @@ import React from "react";
 import styles from "./Navbar.module.css";
 import Link from "next/link";
 
-const NavBar = ({ text, src }) => {
+const NavBar = ({ text, value, onClick }) => {
   return (
-    <div className="navbar">
-      <div className="navbar-textbox">
-        <h2 >{text}</h2>
+    <div className="navbar" onClick={onClick} >
+      <div className="navbar-textbox" data-value={value}>
+        <h2 data-value={value}>{text}</h2>
       </div>
-      <div className="navbar-circlebox">
-        <div className="navbar-circle" />
+      <div className="navbar-circlebox" data-value={value}>
+        <div className="navbar-circle" data-value={value}/>
       </div>
     </div>
   );
