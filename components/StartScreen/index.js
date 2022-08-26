@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 
-const StartScreen = () => {
+const StartScreen = ({popupImage}) => {
     return (
         <div className="start-screen">
             <h2>Profile</h2>
@@ -18,9 +18,9 @@ const StartScreen = () => {
                     <h4>Chemical Engineering, Tour Guide, Board Game Maker</h4>
                 </div>
                 <div className="start-screen-image">
-                    <Image src={require("../../public/MugShot.png")} alt="Creator of the Website"/>
-                    <Image src={require("../../public/SoC-Logo.png")} alt="School Of Code Logo"/>
-                    <Image src={require("../../public/BoardGame.jpg")} alt="Picture of the Creator of the Website"/>
+                    <Image src={require("../../public/MugShot.png")} alt="Creator of the Website" onClick={popupImage}/>
+                    <Image src={require("../../public/SoC-Logo.png")} alt="School Of Code Logo" onClick={popupImage}/>
+                    <Image src={require("../../public/BoardGame.jpg")} alt="Picture of the Creator of the Website" onClick={popupImage}/>
                 </div>
             </div>
         </div>
