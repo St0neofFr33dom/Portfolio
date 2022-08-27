@@ -4,6 +4,7 @@ import NavBar from "../components/NavBar";
 import PortfolioScreen from "../components/PortfolioScreen";
 import StartScreen from "../components/StartScreen";
 import ModalPicture from "../components/ModalPicture";
+import ActivatedNavBar from "../components/AcitvatednavBar";
 import Image from "next/image";
 
 const Home = () => {
@@ -41,9 +42,12 @@ const Home = () => {
       <h1>Christophe Charbonneau-Freeston</h1>
       <div className="hero">
         <div className="navbar-container">
-          <NavBar text="About Me"  value="About" onClick={changeScreen}/>
-          <NavBar text="Projects" value="Projects" onClick={changeScreen}/>
-          <NavBar text="Skills" value="Skills" onClick={changeScreen}/>
+          {(screen !== "About") && <NavBar text="About Me"  value="About" onClick={changeScreen}/>}
+          {(screen == "About") && <ActivatedNavBar text="About Me"  value="About" onClick={changeScreen}/>}
+          {(screen !== "Projects") && <NavBar text="Projects" value="Projects" onClick={changeScreen}/>}
+          {(screen == "Projects") && <ActivatedNavBar text="Projects" value="Projects" onClick={changeScreen}/>}
+          {(screen !== "Skills") && <NavBar text="Skills" value="Skills" onClick={changeScreen}/>}
+          {(screen == "Skills") && <ActivatedNavBar text="Skills" value="Skills" onClick={changeScreen}/>}
         </div>
         <div className="screen-container">
           {(screen === "Start") && <StartScreen popupImage={popupImage}/>}
