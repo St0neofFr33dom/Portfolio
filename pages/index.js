@@ -3,6 +3,7 @@ import AboutScreen from "../components/AboutScreen";
 import NavBar from "../components/NavBar";
 import PortfolioScreen from "../components/PortfolioScreen";
 import StartScreen from "../components/StartScreen";
+import SkillScreen from "../components/SkillScreen";
 import ModalPicture from "../components/ModalPicture";
 import ActivatedNavBar from "../components/AcitvatednavBar";
 import Image from "next/image";
@@ -53,6 +54,7 @@ const Home = () => {
           {(screen === "Start") && <StartScreen popupImage={popupImage}/>}
           {(screen === "About") && <AboutScreen popupImage={popupImage}/>}
           {(screen === "Projects") && <PortfolioScreen popupImage={popupImage}/>}
+          {(screen === "Skills") && <SkillScreen popupImage={popupImage}/>}
         </div>
       </div>
       {modalCaption && <ModalPicture modalImage={modalSrc} modalCaption={modalCaption} closeModal={closeModal}/>}
