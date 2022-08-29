@@ -176,6 +176,25 @@ img:hover{
   margin: 2em 1em
 }
 
+/* || Portfolio Screen Content || */
+
+.portfolio-screen{
+  display: flex;
+  flex-direction: column;
+}
+
+.project-entry{
+  display: flex;
+  flex-direction: row;
+}
+
+.project-entry-text{
+  width: 60%;
+}
+
+.project-entry-list{
+  width: 39%;
+}
 /* || Skill Screen Content || */
 
 .skill-screen{

@@ -7,6 +7,7 @@ import SkillScreen from "../components/SkillScreen";
 import ModalPicture from "../components/ModalPicture";
 import ActivatedNavBar from "../components/AcitvatednavBar";
 import Image from "next/image";
+import LearningScreen from "../components/LearningScreen";
 
 const Home = () => {
 
@@ -49,12 +50,15 @@ const Home = () => {
           {(screen == "Projects") && <ActivatedNavBar text="Projects" value="Projects" onClick={changeScreen}/>}
           {(screen !== "Skills") && <NavBar text="Skills" value="Skills" onClick={changeScreen}/>}
           {(screen == "Skills") && <ActivatedNavBar text="Skills" value="Skills" onClick={changeScreen}/>}
+          {(screen !== "Learning") && <NavBar text="Learning" value="Learning" onClick={changeScreen}/>}
+          {(screen == "Learning") && <ActivatedNavBar text="Learning" value="Learning" onClick={changeScreen}/>}
         </div>
         <div className="screen-container">
           {(screen === "Start") && <StartScreen popupImage={popupImage}/>}
           {(screen === "About") && <AboutScreen popupImage={popupImage}/>}
           {(screen === "Projects") && <PortfolioScreen popupImage={popupImage}/>}
           {(screen === "Skills") && <SkillScreen popupImage={popupImage}/>}
+          {(screen === "Learning") && <LearningScreen popupImage={popupImage}/>}
         </div>
       </div>
       {modalCaption && <ModalPicture modalImage={modalSrc} modalCaption={modalCaption} closeModal={closeModal}/>}

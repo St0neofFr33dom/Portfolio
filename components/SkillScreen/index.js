@@ -17,7 +17,7 @@ import figmaImage from "../../public/techStackSVG/Figma-logo.svg"
 
 
 
-const SkillScreen = () => {
+const SkillScreen = ({popupImage}) => {
 
     const techStack = [
         {image: htmlImage, name: "HTML"},
@@ -40,7 +40,7 @@ const SkillScreen = () => {
             <h2>Key Stacks</h2>
             <div className="skill-screen-container">
                 {techStack.map((entry, index) => {
-                    return <SkillSymbol key={index} image={entry.image} name={entry.name} />
+                    return <SkillSymbol key={index} image={entry.image} name={entry.name} onClick={popupImage}/>
                 })}
             </div>
         </div>
