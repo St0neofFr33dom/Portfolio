@@ -1,0 +1,8 @@
+/* || Portfolio Screen Content || */
+
+.screen{
+    display: flex;
+    flex-direction: column;
+  }
+  
+

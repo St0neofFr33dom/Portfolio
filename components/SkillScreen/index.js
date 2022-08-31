@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import styles from "./styles.module.css"
 import SkillSymbol from '../SkillSymbol'
 
 import htmlImage from "../../public/techStackSVG/HTML5_Badge.svg"
@@ -36,9 +37,9 @@ const SkillScreen = ({popupImage}) => {
 
 
     return (
-        <div className="skill-screen">
+        <div className={styles.screen}>
             <h2>Key Stacks</h2>
-            <div className="skill-screen-container">
+            <div className={styles.container}>
                 {techStack.map((entry, index) => {
                     return <SkillSymbol key={index} image={entry.image} name={entry.name} onClick={popupImage}/>
                 })}

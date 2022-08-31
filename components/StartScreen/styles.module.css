@@ -1,0 +1,33 @@
+/* || Start Screen Content || */
+
+.screen{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .screen > h2{
+    text-align: center;
+    margin-bottom: -1em;
+  }
+  
+  .container{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .text{
+    width: 70%;
+  }
+  
+  .text > h3{
+    text-decoration: underline;
+  }
+  
+  .text > h4{
+    margin-top: -0.5em;
+  }
+  
+  .image{
+    width: 30%;
+    margin: 2em 1em
+  }

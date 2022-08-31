@@ -8,6 +8,7 @@ import ModalPicture from "../components/ModalPicture";
 import ActivatedNavBar from "../components/AcitvatednavBar";
 import Image from "next/image";
 import LearningScreen from "../components/LearningScreen";
+import Link from "next/link";
 
 const Home = () => {
 

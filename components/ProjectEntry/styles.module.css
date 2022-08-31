@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .text{
+    width: 60%;
+  }
+  
+  .list{
+    width: 39%;
+  }

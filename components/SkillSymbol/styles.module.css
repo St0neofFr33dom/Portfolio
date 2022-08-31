@@ -1,0 +1,25 @@
+.symbol{
+    display: block;
+    width: 99%;
+    height: 99%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container{
+    width:30%;
+    min-width: 70px;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width:1080px) {
+    
+    .container{
+      width: 20%;
+      margin: 0.5em;
+    }
+  }

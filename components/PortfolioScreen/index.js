@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from "./styles.module.css"
 import ProjectEntry from '../ProjectEntry'
 
 const PortfolioScreen = () => {
@@ -7,9 +8,9 @@ const PortfolioScreen = () => {
     let carefullDescription = "Final group project made during School of Code. A web application for users to store symptom info and a schedule reminder for their pets."
 
     return (
-        <div className="portfolio-screen">
+        <div className={styles.screen}>
             <h2>Projects</h2>
-            <div className="portfolio-screen-container">
+            <div>
                 <ProjectEntry title="Care-Full" link="https://care-full.netlify.app/" description={carefullDescription} skills={["Next.JS","Auth0","Express","PostgreSQL"]}/> 
                 <ProjectEntry title="Sudoku Solver" link="https://github.com/St0neofFr33dom/Sudoku_solver_javascript" description={sudokuDescription} skills={["NodeJS","Jest"]}/>   
             </div>

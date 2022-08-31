@@ -1,13 +1,14 @@
 import React from 'react'
+import styles from "./styles.module.css"
 
 const ProjectEntry = ({link, title, description, skills}) => {
     return (
-        <div className="project-entry">
-            <div className="project-entry-text">
+        <div className={styles.container}>
+            <div className={styles.text}>
                 <h3><a href={link} target="_blank" rel="noreferrer">{title}</a></h3>
                 <p>{description}</p>
             </div>
-            <div className="project-entry-list">
+            <div className={styles.list}>
                 <h3>Key Technologies</h3>
                 <ul>
                     {skills.map((skill) => {

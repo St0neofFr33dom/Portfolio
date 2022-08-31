@@ -1,0 +1,42 @@
+/* || NavBar Component || */
+.container{
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    margin: 0.5em 0;
+  }
+  
+  .container:hover{
+    cursor: pointer;
+  }
+  .textbox{
+    width: 80%;
+    background-color: steelblue;
+  }
+  
+  
+  .circlebox{
+    width: 10vh;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    background-color: steelblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .circle {
+    height : 90%;
+    width : 90%;
+    background-color: #A31621;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .circle > div {
+    height : 100%;
+    width : 10%;
+    background-color: green;
+    border-radius: 5%;
+  }
