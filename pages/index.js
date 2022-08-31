@@ -42,7 +42,9 @@ const Home = () => {
 
   return (
     <main>
-      <h1>Christophe Charbonneau-Freeston</h1>
+      <div className="wrapper">
+        <h1>Christophe Charbonneau-Freeston</h1>
+      </div>
       <div className="hero">
         <div className="navbar-container">
           {(screen !== "About") && <NavBar text="About Me"  value="About" onClick={changeScreen}/>}
@@ -63,6 +65,7 @@ const Home = () => {
         </div>
       </div>
       {modalCaption && <ModalPicture modalImage={modalSrc} modalCaption={modalCaption} closeModal={closeModal}/>}
+      <a href="https://github.com/St0neofFr33dom/Portfolio" target="_blank" rel="noreferrer">Web Page Repo</a>
     </main>
   );
 };
