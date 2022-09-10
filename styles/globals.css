@@ -40,6 +40,9 @@ img:hover{
   cursor: pointer;
 }
 
+a{
+  color:rgb(77, 77, 254)
+}
 
 /* || Main Page Containers || */
 

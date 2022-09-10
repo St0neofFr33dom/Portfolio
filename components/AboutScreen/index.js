@@ -9,7 +9,7 @@ const AboutScreen = ({popupImage}) => {
             <div className={styles.container}>
                 <div className={styles.text}>
                     <h3>University</h3>
-                    <p>I studied Chemical with Environmental Engineering at the University of Nottingham, working in randomly assinged teams on projects.</p>
+                    <p>I studied Chemical with Environmental Engineering at the University of Nottingham, working in randomly assigned teams on projects.</p>
                     <h3>Hobbies</h3>
                     <p>I love games, whether they be Tabltetop, Board or Video. I also love nature, often going out for walks and recently took an interest in photography when out and about.</p>
                 </div>

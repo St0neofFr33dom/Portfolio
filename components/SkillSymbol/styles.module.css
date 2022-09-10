@@ -1,7 +1,7 @@
 .symbol{
     display: block;
     width: 99%;
-    height: 99%;
+    max-height: 99%;
     margin: auto;
     justify-content: center;
     align-items: center;

@@ -15,6 +15,8 @@ import nextJSImage from "../../public/techStackSVG/Nextjs-logo.svg"
 import githubImage from "../../public/techStackSVG/github-Octicons-mark-.svg"
 import authImage from "../../public/techStackSVG/auth0-icon.svg"
 import figmaImage from "../../public/techStackSVG/Figma-logo.svg"
+import graphImage from "../../public/techStackSVG/GraphQL_Logo.svg"
+import mongoImage from "../../public/techStackSVG/MongoDB_Logo.svg"
 
 
 
@@ -33,6 +35,8 @@ const SkillScreen = ({popupImage}) => {
         {image: githubImage, name: "Github"},
         {image: authImage, name: "Auth0"},
         {image: figmaImage, name: "Figma"},
+        {image: graphImage, name: "GraphQL"},
+        {image: mongoImage, name: "MongoDB"},
     ]
 
 

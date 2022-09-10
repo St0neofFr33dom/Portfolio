@@ -14,7 +14,7 @@ const StartScreen = ({popupImage}) => {
                     <h4>Full-Stack Web Developer</h4>
                     <h3>Specialty</h3>
                     <h4>Front-End: React and Next.Js</h4>
-                    <h4>Back-End: Express REST APIs</h4>
+                    <h4>Back-End: Express, REST APIs, GraphQL APIs</h4>
                     <h3>History</h3>
                     <h4>Chemical Engineering, Tour Guide, Board Game Maker</h4>
                 </div>
