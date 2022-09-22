@@ -7,6 +7,7 @@ const PortfolioScreen = () => {
     let graphQLDescription = "GraphQL Project, using an Apollo server in conjuction with an express server, communicating with a MongoDB database. The data is for a video game relesaed in 2005"
     let sudokuDescription = "An application that takes in a sudoku puzzle and solves it (The logic can currently solve easy and medium puzzles, but struggles with harder diffuclty puzzles"
     let carefullDescription = "Final group project made during School of Code. A web application for users to store symptom info and a schedule reminder for their pets."
+    let reactNativeDescription = "Group project, teaching ourselves React native and Expo Apps. Also practicing our Typescript."
 
     return (
         <div className={styles.screen}>
@@ -14,7 +15,8 @@ const PortfolioScreen = () => {
             <div>
                 <ProjectEntry title="Care-Full" link="https://care-full.netlify.app/" description={carefullDescription} skills={["Next.JS","Auth0","Express","PostgreSQL"]}/> 
                 <ProjectEntry title="Fire Emblem GraphQL API" link="https://github.com/St0neofFr33dom/GraphQLProject" description={graphQLDescription} skills={["MongoDB","Apollo"]}/> 
-                <ProjectEntry title="Sudoku Solver" link="https://github.com/St0neofFr33dom/Sudoku_solver_javascript" description={sudokuDescription} skills={["NodeJS","Jest"]}/>   
+                <ProjectEntry title="Sudoku Solver" link="https://github.com/St0neofFr33dom/Sudoku_solver_javascript" description={sudokuDescription} skills={["NodeJS","Jest"]}/>
+                <ProjectEntry title="React Native Quiz App" link="https://github.com/anastasia-starostina/React_Native_SciFi_App" description={reactNativeDescription} skills={["React Native", "Expo Go", "Typescript"]}/>    
             </div>
         </div>
     )

@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from "./styles.module.css"
+import Image from 'next/image'
 
 const ProjectEntry = ({link, title, description, skills}) => {
     return (
@@ -7,6 +8,9 @@ const ProjectEntry = ({link, title, description, skills}) => {
             <div className={styles.text}>
                 <h3><a href={link} target="_blank" rel="noreferrer">{title}</a></h3>
                 <p>{description}</p>
+            </div>
+            <div className={styles.image}>
+                <Image src={require("../../public/nic-cage-eyes.jpg")} alt="Nic Cage Eyes" />
             </div>
             <div className={styles.list}>
                 <h3>Key Technologies</h3>

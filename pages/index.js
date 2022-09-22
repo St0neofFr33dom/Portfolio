@@ -99,6 +99,7 @@ const Home = () => {
               <LearningScreen popupImage={popupImage} />
             )}
           </div>
+          <div className="computer-stack" />
         </div>
       </div>
       {modalCaption && (
