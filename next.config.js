@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['localhost']
+    domains: ['localhost','christophe-charbonneau-freeston-portfolio.vercel.app',"christophe-charbonneau-freeston-portfolio"]
   }
 }
 
