@@ -1,12 +1,22 @@
 .container{
     display: flex;
     flex-direction: row;
+    width: 100%;
+    height: auto;
+    gap: 1em;
+    border: 0.1em solid white;
   }
   
   .text{
-    width: 60%;
+    width: 50%;
+  }
+
+  .image{
+    width: 20%;
+    height:90%;
+    padding-top: 1em;
   }
   
   .list{
-    width: 39%;
+    width: 29%;
   }

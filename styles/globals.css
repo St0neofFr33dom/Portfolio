@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=VT323&display=swap");
+
 :root{
   --background-colour: #172121;
   --highlight-colour: #A31621;
@@ -22,6 +24,7 @@ main {
   flex-direction: column;
   width: 100vw;
   height: 100vh;
+  padding-right:0.5em;
 }
 h1 {
   color: var(--text-colour);
@@ -65,14 +68,81 @@ a{
 }
 
 .navbar-container{
-  width:50%;
+  width:40%;
 }
 
 .screen-container{
-  width:50%;
-  background-color: rgb(8, 61, 8);
+  width:60%;
+  font-family: "VT323", monospace;
+  height:  30em;
 }
 
+.computer-screen{
+  width:100%;
+  height: 90%;
+  position: relative;
+  border: 1em ridge wheat;
+  padding: 1rem;
+  background-color: black;
+  border-radius: 5%;
+}
+
+.computer-screen:before{
+  content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(18, 60, 17, 0.6),
+        rgba(0, 0, 0, 0.25) 50%
+    );
+    background-size: 100% 8px;
+    z-index: 2;
+    pointer-events: none;
+    border-radius: 10%;
+}
+
+.computer-screen:after{
+  content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(150,250,0,0.1);
+    background-size: 100% 8px;
+    z-index: 2;
+    pointer-events: none;
+    height:100%;
+    width: 100%
+}
+
+.computer-stack{
+  width: 100%;
+  height: 4rem;
+  background-color: wheat;
+}
+
+.scanline {
+  width: 100%;
+  height: 100px;
+  z-index: 5;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(255, 255, 255, 0.2) 10%,
+      rgba(0, 0, 0, 0.1) 100%
+  );
+  opacity: 0.1;
+  position: absolute;
+  bottom: 100%;
+  animation: scanline 10s linear infinite;
+}
 
 /* || Media Queries || */
 @media screen and (max-width:720px) {
@@ -102,4 +172,16 @@ a{
   }
 
 
+}
+
+@keyframes scanline {
+  0% {
+      bottom: 100%;
+  }
+  80% {
+      bottom: 100%;
+  }
+  100% {
+      bottom: 0%;
+  }
 }

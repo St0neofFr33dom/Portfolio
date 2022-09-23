@@ -1,6 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
 import styles from "./styles.module.css"
+import profilePic from "../../public/MugShot.png"
+import SoCLogo from "../../public/SoC-Logo.png"
+import BoardgameImage from "../../public/BoardGame.jpg"
 
 const StartScreen = ({popupImage}) => {
     return (
@@ -19,9 +22,9 @@ const StartScreen = ({popupImage}) => {
                     <h4>Chemical Engineering, Tour Guide, Board Game Maker</h4>
                 </div>
                 <div className={styles.image}>
-                    <Image src={require("../../public/MugShot.png")} alt="Creator of the Website" onClick={popupImage}/>
-                    <Image src={require("../../public/SoC-Logo.png")} alt="School Of Code Logo" onClick={popupImage}/>
-                    <Image src={require("../../public/BoardGame.jpg")} alt="Picture of the Creator of the Website" onClick={popupImage}/>
+                    <Image src={profilePic} alt="Creator of the Website" onClick={popupImage}/>
+                    <Image src={SoCLogo} alt="School Of Code Logo" onClick={popupImage}/>
+                    <Image src={BoardgameImage} alt="Picture of the Creator of the Website" onClick={popupImage}/>
                 </div>
             </div>
         </div>
