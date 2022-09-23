@@ -4,6 +4,7 @@
     width: 100%;
     height: auto;
     gap: 1em;
+    border: 0.1em solid white;
   }
   
   .text{
@@ -13,8 +14,7 @@
   .image{
     width: 20%;
     height:90%;
-    display: block;
-    align-self: center;
+    padding-top: 1em;
   }
   
   .list{

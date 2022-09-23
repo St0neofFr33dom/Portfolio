@@ -28,7 +28,7 @@ const Home = () => {
   }
 
   function popupImage(e) {
-    setModalSrc(e.target.srcset);
+    setModalSrc(e.target.src);
     setModalCaption(e.target.alt);
     setModalDisplay("display:block");
   }

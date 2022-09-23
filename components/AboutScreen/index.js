@@ -1,6 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
 import styles from "./styles.module.css"
+import UONLogo from "../../public/logo-primary-single-col-blk.png"
+import FlowerPhoto from "../../public/Flower_Photo.JPG"
 
 const AboutScreen = ({popupImage}) => {
     return (
@@ -14,8 +16,8 @@ const AboutScreen = ({popupImage}) => {
                     <p>I love games, whether they be Tabltetop, Board or Video. I also love nature, often going out for walks and recently took an interest in photography when out and about.</p>
                 </div>
                 <div className={styles.images}>
-                    <Image src={require("../../public/logo-primary-single-col-blk.png")} alt="University of Nottingham Logo" onClick={popupImage}/>
-                    <Image src={require("../../public/Flower_Photo.JPG")} alt="Flower" onClick={popupImage}/>
+                    <Image src={UONLogo} alt="University of Nottingham Logo" onClick={popupImage}/>
+                    <Image src={FlowerPhoto} alt="Flower" onClick={popupImage}/>
                 </div>
             </div>
         </div>
