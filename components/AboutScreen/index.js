@@ -16,8 +16,8 @@ const AboutScreen = ({popupImage}) => {
                     <p>I love games, whether they be Tabltetop, Board or Video. I also love nature, often going out for walks and recently took an interest in photography when out and about.</p>
                 </div>
                 <div className={styles.images}>
-                    <Image src={UONLogo} alt="University of Nottingham Logo" onClick={popupImage}/>
-                    <Image src={FlowerPhoto} alt="Flower" onClick={popupImage}/>
+                    <Image src={UONLogo} className={styles.image} alt="University of Nottingham Logo" onClick={popupImage}/>
+                    <Image src={FlowerPhoto} className={styles.image} alt="Flower" onClick={popupImage}/>
                 </div>
             </div>
         </div>

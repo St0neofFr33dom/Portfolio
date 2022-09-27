@@ -20,3 +20,30 @@
   .list{
     width: 29%;
   }
+
+  @media screen and (max-width:720px) {
+    .text{
+      width:45%;
+    }
+    .text > p{
+      font-size: smaller;
+    }
+    .text > h3{
+      font-size: small;
+    }
+    .image{
+      width:15%;
+      padding-top: 0em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: auto;
+    }
+    .list{
+      width:39%
+    }
+    .list > h3{
+      font-size: small;
+    }
+    
+  }
