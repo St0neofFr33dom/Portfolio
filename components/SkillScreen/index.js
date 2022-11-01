@@ -6,6 +6,7 @@ import SkillSymbol from '../SkillSymbol'
 import htmlImage from "../../public/techStackSVG/HTML5_Badge.svg"
 import cssImage from "../../public/techStackSVG/CSS3_logo.svg"
 import jsImage from "../../public/techStackSVG/Unofficial_JavaScript_logo_2.svg"
+import tsImage from "../../public/techStackSVG/Typescript_logo.svg"
 import nodeImage from "../../public/techStackSVG/nodejs-seeklogo.com.svg"
 import reactImage from "../../public/techStackSVG/React-icon.svg"
 import expressImage from "../../public/techStackSVG/expressjs-ar21.svg"
@@ -17,7 +18,7 @@ import authImage from "../../public/techStackSVG/auth0-icon.svg"
 import figmaImage from "../../public/techStackSVG/Figma-logo.svg"
 import graphImage from "../../public/techStackSVG/GraphQL_Logo.svg"
 import mongoImage from "../../public/techStackSVG/MongoDB_Logo.svg"
-
+import swiftImage from "../../public/techStackSVG/Swift_logo.svg"
 
 
 const SkillScreen = ({popupImage}) => {
@@ -25,7 +26,9 @@ const SkillScreen = ({popupImage}) => {
     const techStack = [
         {image: htmlImage, name: "HTML"},
         {image: cssImage, name: "CSS"},
-        {image: jsImage, name: "Javascript"},
+        {image: jsImage, name: "JavaScript"},
+        {image: tsImage, name: "TypeScript"},
+        {image: swiftImage, name: "Swift"},
         {image: nodeImage, name: "Node.js"},
         {image: reactImage, name: "React"},
         {image: expressImage, name: "Express"},

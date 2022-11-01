@@ -88,7 +88,7 @@ const Home = () => {
         </div>
         <div className="screen-container">
           <div className="computer-screen">
-            <div className="scanline" />
+            <div className="scanline"/>
             {screen === "Start" && <StartScreen popupImage={popupImage} />}
             {screen === "About" && <AboutScreen popupImage={popupImage} />}
             {screen === "Projects" && (
